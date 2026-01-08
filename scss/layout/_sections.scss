@@ -1,0 +1,5 @@
+@use "../base/variables" as var;
+
+section {
+  padding-block: var.$space-4;
+}

@@ -1,0 +1,7 @@
+@use "../base/variables" as var;
+
+.container {
+  max-width: var.$max-width;
+  margin-inline: auto;
+  padding-inline: var.$space-2;
+}
