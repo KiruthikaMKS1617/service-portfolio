@@ -22,3 +22,9 @@ svg {
   display: block;
   max-width: 100%;
 }
+
+a,
+button,
+[role="button"] {
+  cursor: pointer;
+}

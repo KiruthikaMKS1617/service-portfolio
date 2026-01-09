@@ -6,22 +6,46 @@ html {
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.6rem; // 16px body text
-  line-height: 1.6;
+  font-size: 1.6rem;
+  line-height: var.$line-height-normal;
   color: #111;
 }
 
+/* Headings */
 h1 {
-  font-size: var.$font-scale-4;
-  line-height: 1.2;
+  font-size: var.$font-heading-lg;
+  line-height: var.$line-height-tight;
 }
 
 h2 {
-  font-size: var.$font-scale-3;
-  line-height: 1.3;
+  font-size: var.$font-heading-sm;
+  line-height: 1.3; // fine to keep custom
 }
 
+/* Text */
 p {
-  font-size: var.$font-scale-1;
+  font-size: var.$font-body;
   max-width: 65ch;
+}
+
+/* Lists */
+ul,
+ol {
+  font-size: var.$font-body;
+  line-height: var.$line-height-normal;
+}
+
+/* Links */
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Buttons & form controls */
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
