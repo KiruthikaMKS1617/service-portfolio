@@ -1,5 +1,12 @@
 @use "../base/variables" as var;
 
 .section {
-  padding-block: var.$space-4;
+  padding-block: var.$space-2;
+
+  @media (min-width: var.$bp-md) {
+    padding-block: var.$space-3;
+  }
+  @media (min-width: var.$bp-xl) {
+    padding-block: var.$space-4;
+  }
 }
