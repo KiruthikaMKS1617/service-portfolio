@@ -110,4 +110,75 @@ select {
   }
 }
 
+.nav {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav--scrolled {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+@media (min-width: 768px) {
+  .nav__list {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0rem;
+  }
+}
+.nav__item {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  padding-block: 0.5rem;
+}
+@media (min-width: 768px) {
+  .nav__item {
+    padding-block: 1rem;
+  }
+}
+.nav__item--logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.hero {
+  padding-block: 6.4rem;
+  background-color: #ffffff;
+}
+
+.hero__heading {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+
+.hero__description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  max-width: 60ch;
+}
+
+@media (min-width: 768px) {
+  .hero__heading {
+    font-size: 3.6rem;
+    max-width: 22ch;
+  }
+  .hero__description {
+    font-size: 1.8rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

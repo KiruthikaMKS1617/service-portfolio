@@ -1,0 +1,47 @@
+@use "../base/variables" as var;
+
+.nav {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  &--scrolled {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+
+    @media (min-width: var.$bp-md) {
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+
+      padding: 1rem 0rem;
+    }
+  }
+
+  &__item {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    padding-block: 0.5rem;
+
+    @media (min-width: var.$bp-md) {
+      padding-block: 1rem;
+    }
+
+    &--logo {
+      font-weight: bold;
+      font-size: 1.25rem;
+      margin-right: auto;
+    }
+  }
+}

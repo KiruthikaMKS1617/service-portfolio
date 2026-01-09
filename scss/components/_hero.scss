@@ -1,1 +1,30 @@
+@use "../base/variables" as var;
 
+.hero {
+  padding-block: var.$space-4;
+  background-color: #ffffff;
+}
+
+.hero__heading {
+  font-size: var.$font-heading-sm;
+  line-height: var.$line-height-tight;
+  margin-bottom: var.$space-2;
+}
+
+.hero__description {
+  font-size: var.$font-body;
+  line-height: var.$line-height-normal;
+  margin-bottom: var.$space-1;
+  max-width: 60ch;
+}
+
+@media (min-width: var.$bp-md) {
+  .hero__heading {
+    font-size: var.$font-heading-lg;
+    max-width: 22ch;
+  }
+
+  .hero__description {
+    font-size: var.$font-body-lg;
+  }
+}
