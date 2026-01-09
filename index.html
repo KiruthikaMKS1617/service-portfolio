@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <div class="container">
-      <header aria-label="site-header">
-        <nav class="nav" aria-label="site-navigation">
+    <header>
+      <nav class="nav">
+        <div class="container">
           <ul class="nav__list">
             <li class="nav__item nav__item--logo">
-              <a href="#hero">Frontend Services</a>
+              <a href="#hero"><strong>Frontend Services</strong></a>
             </li>
             <li class="nav__item"><a href="#services">Services</a></li>
             <li class="nav__item">
@@ -25,9 +25,11 @@
             <li class="nav__item"><a href="#why-me">Why Me?</a></li>
             <li class="nav__item"><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
-        <section class="hero" id="hero">
-          <h1 class="hero__heading hero__heading--large">
+        </div>
+      </nav>
+      <section class="hero" id="hero">
+        <div class="container">
+          <h1 class="hero__heading">
             I build fast, accessible & SEO-friendly websites from designs.
           </h1>
           <p class="hero__description">
@@ -37,10 +39,12 @@
             Ideal for landing pages, small business websites & frontend
             contracts.
           </p>
-        </section>
-      </header>
-      <main>
-        <section class="services" id="services">
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="section services" id="services">
+        <div class="container">
           <h2 class="services__heading">Services</h2>
           <ul class="services__list">
             <li class="services__item">
@@ -51,12 +55,16 @@
             <li class="services__item">Fix accessibility issues</li>
             <li class="services__item">Optimize for Lighthouse performance</li>
           </ul>
-        </section>
-        <section class="proof-of-work" id="proof-of-work">
+        </div>
+      </section>
+      <section class="section proof-of-work" id="proof-of-work">
+        <div class="container">
           <h2 class="proof__heading">Proof of Work</h2>
           <!-- Proof cards will be added here -->
-        </section>
-        <section class="why-me" id="why-me">
+        </div>
+      </section>
+      <section class="section why-me" id="why-me">
+        <div class="container">
           <h2 class="why-me__heading">Why Me?</h2>
           <ul class="why-me__list">
             <li class="why-me__item">Clean, readable code</li>
@@ -66,15 +74,19 @@
             <li class="why-me__item">Reliable delivery for short-term tasks</li>
             <li class="why-me__item">Clear communication</li>
           </ul>
-        </section>
-        <section class="cta" id="contact">
+        </div>
+      </section>
+      <section class="cta" id="contact">
+        <div class="container">
           <h2>Available for short-term frontend tasks & contracts.</h2>
           <a href="mailto:kiruthikamuruganantham@gmail.com">Contact Me</a>
-        </section>
-      </main>
-      <footer aria-label="site-footer">
-        Frontend Services by Kiruthika Muruganantham
-      </footer>
-    </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>Frontend Services by Kiruthika Muruganantham</p>
+      </div>
+    </footer>
   </body>
 </html>
