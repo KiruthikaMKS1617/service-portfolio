@@ -1,0 +1,40 @@
+@use "../base/variables" as var;
+
+.services {
+  &__heading {
+    font-size: var.$font-heading-sm;
+    margin-bottom: var.$space-3;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var.$space-2;
+
+    @media (min-width: var.$bp-md) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var.$space-3;
+    }
+
+    @media (min-width: var.$bp-lg) {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var.$space-3;
+    }
+  }
+  &__item {
+    font-size: var.$font-body;
+    line-height: var.$line-height-normal;
+    padding-left: var.$space-2;
+    position: relative;
+
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #555;
+    }
+  }
+}
