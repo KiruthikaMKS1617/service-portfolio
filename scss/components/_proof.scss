@@ -1,0 +1,53 @@
+@use "../base/variables" as var;
+
+.proof {
+  &__heading {
+    font-size: var.$font-heading-sm;
+    margin-bottom: var.$space-3;
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    gap: var.$space-3;
+
+    @media (min-width: var.$bp-md) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var.$space-4;
+    }
+  }
+}
+
+.proof-card {
+  border: 1px solid #e5e5e5;
+  padding: var.$space-3;
+  border-radius: 8px;
+  background: #fff;
+
+  &__title {
+    font-size: var.$font-body-lg;
+    margin-bottom: var.$space-1;
+  }
+
+  &__desc {
+    font-size: var.$font-body;
+    color: #555;
+    margin-bottom: var.$space-2;
+  }
+
+  &__links {
+    display: flex;
+    gap: var.$space-2;
+  }
+
+  &__link {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
