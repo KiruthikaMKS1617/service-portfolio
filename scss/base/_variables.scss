@@ -18,6 +18,10 @@ $space-4: 6.4rem; // 64px
 
 $container-padding: $space-2;
 
+$section-padding-mobile: $space-2;
+$section-padding-desktop: calc($space-4 * 1.5);
+$section-padding-xl: calc($space-4 * 1.75);
+
 //Layout
 $max-width: 110rem; // 1100px
 
