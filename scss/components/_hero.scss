@@ -9,6 +9,11 @@
   font-size: var.$font-heading-sm;
   line-height: var.$line-height-tight;
   margin-bottom: var.$space-2;
+
+  @media (min-width: var.$bp-md) {
+    font-size: var.$font-heading-lg;
+    max-width: 22ch;
+  }
 }
 
 .hero__description {
@@ -16,15 +21,8 @@
   line-height: var.$line-height-normal;
   margin-bottom: var.$space-1;
   max-width: 60ch;
-}
 
-@media (min-width: var.$bp-md) {
-  .hero__heading {
-    font-size: var.$font-heading-lg;
-    max-width: 22ch;
-  }
-
-  .hero__description {
+  @media (min-width: var.$bp-md) {
     font-size: var.$font-body-lg;
   }
 }

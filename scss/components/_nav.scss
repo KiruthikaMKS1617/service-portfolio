@@ -5,11 +5,10 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-
+  border-bottom: 1px solid transparent;
   &--scrolled {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #0000001a;
+    transition: border 0.3s ease;
   }
 
   &__list {
