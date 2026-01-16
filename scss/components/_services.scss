@@ -18,9 +18,7 @@
     }
 
     @media (min-width: var.$bp-lg) {
-      display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: var.$space-3;
     }
   }
   &__item {
