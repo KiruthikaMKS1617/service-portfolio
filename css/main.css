@@ -81,8 +81,8 @@ select {
 
 .container {
   width: 100%;
-  padding-inline: 1.6rem;
   max-width: 110rem;
+  padding-inline: 1.6rem;
   margin-inline: auto;
 }
 @media (min-width: 768px) {

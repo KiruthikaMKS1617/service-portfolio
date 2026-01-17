@@ -1,9 +1,9 @@
 @use "../base/variables" as var;
 
 .container {
-  width: 100%; // mobile-first default
-  padding-inline: var.$space-2;
+  width: 100%; // mobile-first default // to make elements occupy full width when it becomes flex/grid
   max-width: var.$max-width;
+  padding-inline: var.$space-2;
   margin-inline: auto;
 
   @media (min-width: var.$bp-md) {
