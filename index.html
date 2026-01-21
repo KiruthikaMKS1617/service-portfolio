@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,32 +8,43 @@
       name="description"
       content="A collection of frontend services such as building Landing Pages, Marketing Pages, Mobile Responsives, Accessibility Compliance for web pages, Improving Lighthouse Score to 90+."
     />
-    <script src="/js/navBarScrollEffect.js" defer></script>
-    <script src="/js/copyrightYear.js" defer></script>
+    <script type="module" src="/js/index.js" defer></script>
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <nav class="nav">
-      <div class="container">
-        <ul class="nav__list">
-          <li class="nav__item nav__item--logo">
-            <a href="#hero" class="nav__link"
-              ><strong>Frontend Services</strong></a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#proof-of-work" class="nav__link">Proof of Work</a>
-          </li>
-          <li class="nav__item">
-            <a href="#why-me" class="nav__link">Why Me?</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
+      <div class="container nav__content">
+        <div class="nav__bar">
+          <a href="#hero" class="nav__logo"
+            ><strong>Frontend Services</strong></a
+          >
+
+          <button
+            class="nav__toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            ☰
+          </button>
+        </div>
+
+        <div class="nav__menu" id="mobile-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#proof-of-work" class="nav__link">Proof of Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#why-me" class="nav__link">Why Me?</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <header>
