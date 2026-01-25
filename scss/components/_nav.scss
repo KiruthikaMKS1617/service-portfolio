@@ -38,21 +38,37 @@
   }
 
   &__menu {
-    display: none;
     position: fixed;
     inset: 56px 0 0 0;
     background: #fff;
     padding: 1.6rem;
+    /* animation base state (closed) */
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      visibility 0s linear 0.25s; // 0.25s delay to match opacity transition
 
     @media (min-width: 768px) {
       display: block;
       position: static;
       padding: 0;
+      transform: none;
+      opacity: 1;
+      pointer-events: auto;
     }
   }
 
   &--open &__menu {
-    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transition-delay: 0s; // immediate visibility change when opening
   }
 
   &__list {

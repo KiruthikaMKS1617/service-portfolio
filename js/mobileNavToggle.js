@@ -14,8 +14,30 @@ const mobileNavToggle = () => {
   toggleBtn.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("nav--open");
     toggleBtn.setAttribute("aria-expanded", isOpen);
+    toggleBtn.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+
     document.body.style.overflow = isOpen ? "hidden" : "";
+
+    if (!isOpen) toggleBtn.focus();
   });
 };
 
 export default mobileNavToggle;
+
+export const toggleRoleDialog = () => {
+  const nav = document.querySelector(".nav");
+  const navMenu = document.querySelector(".nav__menu");
+
+  if (!nav || !navMenu) return;
+
+  const isOpen = nav.classList.contains("nav--open");
+  if (isOpen) {
+    // Add roles ONLY when behaving like a mobile modal
+    navMenu.setAttribute("role", "dialog");
+    navMenu.setAttribute("aria-modal", "true");
+  } else {
+    // Remove roles so it's a normal element on desktop
+    navMenu.removeAttribute("role");
+    navMenu.removeAttribute("aria-modal");
+  }
+};
