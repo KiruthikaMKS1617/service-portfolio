@@ -2,6 +2,8 @@ const mobileNavToggle = () => {
   const nav = document.querySelector(".nav");
   const toggleBtn = document.querySelector(".nav__toggle");
 
+  const srOnlyNavStatus = document.getElementById("nav-status");
+
   if (!nav || !toggleBtn) return;
   // | Layer                 | What it describes    | Your meaning (refined)                              |
   // | --------------------- | -------------------- | --------------------------------------------------- |
@@ -19,6 +21,11 @@ const mobileNavToggle = () => {
     document.body.style.overflow = isOpen ? "hidden" : "";
 
     if (!isOpen) toggleBtn.focus();
+
+    if (srOnlyNavStatus)
+      srOnlyNavStatus.textContent = isOpen
+        ? "Navigation menu opened"
+        : "Navigation menu closed";
   });
 };
 
