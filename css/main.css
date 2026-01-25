@@ -158,12 +158,14 @@ select {
 }
 @media (min-width: 768px) {
   .nav__menu {
-    display: block;
     position: static;
+    inset: auto;
     padding: 0;
     transform: none;
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
+    transition: none;
   }
 }
 .nav--open .nav__menu {

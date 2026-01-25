@@ -54,12 +54,15 @@
       visibility 0s linear 0.25s; // 0.25s delay to match opacity transition
 
     @media (min-width: 768px) {
-      display: block;
       position: static;
+      inset: auto;
       padding: 0;
+
       transform: none;
       opacity: 1;
       pointer-events: auto;
+      visibility: visible;
+      transition: none;
     }
   }
 

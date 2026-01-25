@@ -1,6 +1,6 @@
 import navBarScrollEffect from "./navBarScrollEffect.js";
 import copyrightYear from "./copyrightYear.js";
-import mobileNavToggle, { toggleRoleDialog } from "./mobileNavToggle.js";
+import mobileNavToggle from "./mobileNavToggle.js";
 import closeNavOnLinkClick from "./closeNavOnLinkClick.js";
 import closeNavOnEsc from "./closeNavOnEsc.js";
 import focusTrapNav from "./focusTrapNav.js";
@@ -13,4 +13,3 @@ closeNavOnLinkClick();
 closeNavOnEsc();
 focusTrapNav();
 closeNavOnOutsideClick();
-toggleRoleDialog();
