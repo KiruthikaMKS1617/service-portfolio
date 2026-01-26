@@ -83,6 +83,20 @@ select {
   font: inherit;
 }
 
+/* Screen-reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Reduced motion users */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -207,25 +221,29 @@ select {
   padding-block: 0.5rem;
   transition: opacity 0.2s ease;
 }
-.nav__item:hover {
-  opacity: 0.65;
-}
 @media (min-width: 768px) {
   .nav__item {
     padding-block: 1rem;
   }
-  .nav__item::after {
-    content: "";
-    display: block;
-    width: 0%;
-    height: 2px;
-    background-color: #333333;
-    transition: width 0.3s ease;
-    margin-top: 4px;
-  }
-  .nav__item:hover::after {
-    width: 100%;
-  }
+}
+.nav .nav__link {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease;
+}
+.nav .nav__link--active {
+  color: #000;
+  font-weight: 600;
+}
+.nav .nav__link--active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #000;
 }
 
 .hero {

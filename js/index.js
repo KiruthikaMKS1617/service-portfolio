@@ -5,6 +5,7 @@ import closeNavOnLinkClick from "./closeNavOnLinkClick.js";
 import closeNavOnEsc from "./closeNavOnEsc.js";
 import focusTrapNav from "./focusTrapNav.js";
 import closeNavOnOutsideClick from "./closeNavOnOutsideClick.js";
+import activeNavHighlight from "./activeNavHighlight.js";
 
 navBarScrollEffect();
 copyrightYear();
@@ -13,3 +14,4 @@ closeNavOnLinkClick();
 closeNavOnEsc();
 focusTrapNav();
 closeNavOnOutsideClick();
+activeNavHighlight();
